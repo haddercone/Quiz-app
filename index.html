@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ TEST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header"> Quizzy </div>
+    <div class="topic">
+        <p>Topic: Python (beginner) <a onclick="showquestionNumbers()" id="toggle">&downarrow;</a></p>
+    </div>
+    <div id="container">
+        <div class="main-wrapper">
+
+            <div class="wrapper">
+                <div class="question">
+                    <p>1. what is the output of the following code</p>
+
+                    <code>
+                        >>> a = "hello" <br>
+                        >>> b = "world"<br>
+                        >>> print(a+b) <br>
+                    </code>
+                </div>
+                <div class="options">
+                    <div class="opt-list">
+                        <input type="radio" name="q1" id="option_1" value="true" class="check">
+                        <p class="option">helloworld</p>
+                    </div>
+                    <div class="opt-list">
+                        <input type="radio" name="q1" id="option_2" value="false" class="check">
+                        <p class="option">hello world</p>
+                    </div>
+                    <div class="opt-list">
+                        <input type="radio" name="q1" id="option_3" value="false" class="check">
+                        <p class="option">hello+world</p>
+                    </div>
+                    <div class="opt-list">
+                        <input type="radio" name="q1" id="option_4" value="true" class="check">
+                        <p class="option">hello + world</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="question">
+                    <p>2. what is the output of the following code</p>
+
+                    <code>
+                    >>> print(*range(10))
+                </code>
+
+                </div>
+                <div class="options">
+                    <div class="opt-list">
+                        <input type="radio" name="q2" id="option_1" value="false" class="check">
+                        <p class="option">[1,2,3,4,5,6,7,8,9,10]</p>
+                    </div>
+                    <div class="opt-list">
+                        <input type="radio" name="q2" id="option_2" value="true" class="check">
+                        <p class="option">[0,1,2,3,4,5,6,7,8,9]</p>
+                    </div>
+                    <div class="opt-list">
+                        <input type="radio" name="q2" id="option_3" value="false" class="check">
+                        <p class="option">error</p>
+                    </div>
+                    <div class="opt-list">
+                        <input type="radio" name="q2" id="option_4" value="false" class="check">
+                        <p class="option">None</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="question">
+                    <p>3. what is the output of the following code:</p>
+                    <code>
+                    >>> fruits = ["banana","orange", "pinapple", "apple"] <br> <br>
+                    >>> for i in fruits[:3]: <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(i, end = ' ')
+                </code>
+                </div>
+                <div class="options">
+                    <div class="opt-list">
+                        <input type="radio" name="q3" id="option_1" value="false" class="check">
+                        <p class="option">banana orange pinapple apple</p>
+                    </div>
+                    <div class="opt-list">
+                        <input type="radio" name="q3" id="option_2" value="true" class="check">
+                        <p class="option">banana orange pinapple</p>
+                    </div>
+                    <div class="opt-list">
+                        <input type="radio" name="q3" id="option_3" value="false" class="check">
+                        <p class="option">banana <br> orange <br>pinapple <br> apple</p>
+                    </div>
+                    <div class="opt-list">
+                        <input type="radio" name="q3" id="option_4" value="false" class="check">
+                        <p class="option">banana <br> orange</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="question">4. what is the function of <code style="font-size: 1.3rem;">"len"</code> in Python
+                    ? </div>
+                <div class="options">
+                    <div class="opt-list">
+                        <input type="radio" name="q4" id="option_1" value="false" class="check">
+                        <p class="option">it calculate the length of every object</p>
+                    </div>
+                    <div class="opt-list">
+                        <input type="radio" name="q4" id="option_2" value="true" class="check">
+                        <p class="option">it calculate the length of every iterable object</p>
+                    </div>
+                    <div class="opt-list">
+                        <input type="radio" name="q4" id="option_3" value="false" class="check">
+                        <p class="option">there is no <code style="font-size: 1.3rem;">"len"</code> function</p>
+                    </div>
+                    <div class="opt-list">
+                        <input type="radio" name="q4" id="option_4" value="false" class="check">
+                        <p class="option">none of these</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="question">
+                    <p>5. what is the output of the following code:</p>
+                    <code>
+                    >>> fruits = ("banana","orange", "pinapple", "apple") <br> <br>
+                    >>> fruits[0] = "papaya" <br>
+                    >>> print(fruits)
+                    
+                </code>
+                </div>
+                <div class="options">
+                    <div class="opt-list">
+                        <input type="radio" name="q5" id="option_1" value="false" class="check">
+                        <p class="option">("banana","orange", "pinapple", "apple")</p>
+                    </div>
+                    <div class="opt-list">
+                        <input type="radio" name="q5" id="option_2" value="false" class="check">
+                        <p class="option">papaya orange pinapple apple</p>
+                    </div>
+                    <div class="opt-list">
+                        <input type="radio" name="q5" id="option_3" value="true" class="check">
+                        <p class="option">error</p>
+                    </div>
+                    <div class="opt-list">
+                        <input type="radio" name="q5" id="option_4" value="false" class="check">
+                        <p class="option">none of these</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="question">
+                    <p>6. Which of the following options result in exactly two lines</p>
+
+                    </code>
+                </div>
+                <div class="options">
+                    <div class="opt-list">
+                        <input type="radio" name="q6" id="option_1" value="true" class="check">
+                        <p class="option">"Hello \n World"</p>
+                    </div>
+                    <div class="opt-list">
+                        <input type="radio" name="q6" id="option_2" value="false" class="check">
+                        <p class="option">"Hello World"</p>
+                    </div>
+                    <div class="opt-list">
+                        <input type="radio" name="q6" id="option_3" value="false" class="check">
+                        <p class="option">"Some\n text\n here"</p>
+                    </div>
+                    <div class="opt-list">
+                        <input type="radio" name="q6" id="option_4" value="false" class="check">
+                        <p class="option">"one \t two \t three"</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="question">
+                    <p>7. Is list comprehension possible in Python?</p>
+
+                    </code>
+                </div>
+                <div class="options">
+                    <div class="opt-list">
+                        <input type="radio" name="q7" id="option_1" value="true" class="check">
+                        <p class="option">True</p>
+                    </div>
+                    <div class="opt-list">
+                        <input type="radio" name="q7" id="option_2" value="false" class="check">
+                        <p class="option">False</p>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="question">
+                    <p>8. Is <code style="font-size: 1.3rem;">"=="</code> similer to <code
+                            style="font-size: 1.3rem;">"is"</code> in Python?</p>
+
+                    </code>
+                </div>
+                <div class="options">
+                    <div class="opt-list">
+                        <input type="radio" name="q8" id="option_1" value="false" class="check">
+                        <p class="option">True</p>
+                    </div>
+                    <div class="opt-list">
+                        <input type="radio" name="q8" id="option_2" value="true" class="check">
+                        <p class="option">False</p>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="q-list" style="display:none;">
+        </div>
+        <div class="nav">
+            <div><button id="cancel" onclick="cancel()" title="clear selected option (Press C)">Clear</button></div>
+            <div><button id="previous" onclick="prev()" title="previous question">&lt;</button>
+                <button id="next" onclick="next()" title="next question">&gt;</button>
+            </div>
+            <div id="finish"><button id="submit" onclick="submitQuiz()" title="Submit quiz (Press Enter)">Submit</button></div>
+
+        </div>
+    </div>
+    <div id="score-container"style="display:none;">
+
+        <div id="con">
+            <p id="score"></p> 
+            <button class="btn-r"onclick="location.reload()">Retake quiz</button>
+            <button class="btn-r"title="Still in beta">Check answers</button> 
+            <button class="btn-r"onclick="location.reload()">Home</button>
+        </div>
+    
+    </div>
+    <footer style="text-align: center;padding: 10px;">Designed & developed By <b>Robin Singh</b></footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
